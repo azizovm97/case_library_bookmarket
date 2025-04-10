@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 from db import get_dataframe
 
-st.title("📚 Library Dashboard")
+st.title("Library Dashboard")
 
 # Загрузка данных
 books_df = get_dataframe('SELECT * FROM books_list')
