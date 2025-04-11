@@ -17,7 +17,8 @@ FROM books_list b JOIN genre g ON b.genre_id = g.genre_id
 ''')
 
 # Фильтры
-selected_genre = st.sidebar.header("Выбрать жанр", ['Все'] + genre_df['genre_name'].tolist())
+st.sidebar.header("Выбрать жанр")
+selected_genre = st.sidebar.selectbox("Жанр", ['Все'] + genre_df['genre_name'].tolist())
 
 if selected_genre != 'Все':
     books_with_genre = books_with_genre[books_with_genre['genre_name'] == selected_genre]
