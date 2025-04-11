@@ -46,4 +46,4 @@ Library_Dashboard_Project/
 Данные предоставлены мной лично и загружены локально в репозиторий проекта.
 
 Local URL: http://localhost:8501
-Network URL: [http://192.168.219.221:8501](https://azizovm97-case-library-bookmarket-main-library-bookmarke-lbx8ps.streamlit.app/)
+Network URL: https://azizovm97-case-library-bookmarket-main-library-bookmarke-lbx8ps.streamlit.app/
