@@ -22,10 +22,6 @@ selected_genre = st.sidebar.header("Выбрать жанр", ['Все'] + genre
 if selected_genre != 'Все':
     books_with_genre = books_with_genre[books_with_genre['genre_name'] == selected_genre]
 
-years_df = load_query("SELECT MIN(year_published) AS min_year, MAX(year_published) AS max_year FROM books_list")
-min_year = int(years_df['min_year'][0])
-max_year = int(years_df['max_year'][0])
-
 # Диаграммы
 fig_books_by_genre = px.histogram(books_with_genre, x='genre_name', title='Количество книг по жанрам')
 st.plotly_chart(fig_books_by_genre)
